@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo da Música: MPB e Gêneros Nacionais e Internacionais</title>
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --accent-color: #e94560;
+            --secondary-color: #16213e;
+            --bg-color: #0f3460;
+            --text-color: #f1f1f1;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        header h1 {
+            text-align: center;
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .mpb-section {
+            background: rgba(233, 69, 96, 0.1);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        h2 {
+            color: #f8c291;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .genre-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .genre-card {
+            background: rgba(255, 255, 255, 0.07);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .genre-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .genre-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        .links-section {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+        }
+
+        .btn:hover {
+            background-color: #ff6b81;
+            transform: scale(1.05);
+        }
+
+        .btn.spotify {
+            background-color: #1db954;
+            box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
+        }
+
+        .btn.spotify:hover {
+            background-color: #1ed760;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Músicas no brasil e no mundo</h1>
+        </header>
+
+        <section class="mpb-section">
+            <h2>A Música Popular Brasileira (MPB)</h2>
+            <p>Funciona como uma verdadeira crônica cantada da história e da alma do Brasil. Mais do que um estilo
+                musical técnico, ela é uma identidade artística construída a muitas mãos, capaz de traduzir as
+                contradições, as dores e a beleza do povo brasileiro através de letras profundas e melodias
+                sofisticadas.</p>
+
+            <h3>As Duas Faces da MPB: Protesto e Sentimento</h3>
+            <p>O nascimento da MPB na década de 1960 moldou uma música de dupla personalidade. Por um lado, ela foi o
+                instrumento de resistência política de uma juventude que enfrentava a opressão da ditadura militar.
+                Compositores como Geraldo Vandré, Chico Buarque e Gilberto Gil precisavam transformar canções em poesia
+                codificada, enganando a censura para dar voz ao sentimento de liberdade de um país inteiro.</p>
+            <p>Por outro lado, a MPB refinou a forma de se falar de amor, de cotidiano e de saudade. Ela herdou a
+                intimidade e a suavidade da Bossa Nova, mas sem medo de mergulhar no drama e na entrega emocional. As
+                interpretações viscerais de Elis Regina, a dramaticidade de Maria Bethânia e a doçura revolucionária de
+                Gal Costa transformaram composições complexas em hinos populares, cantados tanto nos grandes teatros
+                quanto nas calçadas.</p>
+        </section>
+
+        <section>
+            <h2>Tipos de Gêneros Nacionais (Brasil)</h2>
+            <div class="genre-grid">
+                <div class="genre-card">
+                    <h3>Samba e Pagode</h3>
+                    <p>Ritmo de raiz africana baseado em instrumentos de percussão (pandeiro, surdo) combinados com
+                        cavaquinho e violão.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Sertanejo</h3>
+                    <p>Evolução da música caipira do interior do país, hoje dominando o mercado com o Sertanejo
+                        Universitário e o "Feminejo".</p>
+                </div>
+                <div class="genre-card">
+                    <h3>MPB</h3>
+                    <p>Vertente intelectualizada que preza por letras poéticas, críticas sociais e arranjos harmônicos
+                        refinados.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Funk Brasileiro</h3>
+                    <p>Nascido nas periferias, mistura o balanço do funk americano com batidas eletrônicas pesadas e o
+                        cotidiano das favelas.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Forró e Piseiro</h3>
+                    <p>Ritmos nordestinos liderados pela sanfona, triângulo e zabumba (no tradicional) ou por teclados
+                        eletrônicos (no piseiro).</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Axé</h3>
+                    <p>Mistura de ritmos baianos, reggae e ritmos caribenhos que embala o Carnaval de Salvador com muita
+                        energia e percussão.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tipos de Gêneros Internacionais</h2>
+            <div class="genre-grid">
+                <div class="genre-card">
+                    <h3>Pop</h3>
+                    <p>Focado em refrões marcantes, batidas dançantes e alta produção comercial para as rádios e
+                        streaming.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Rock</h3>
+                    <p>Marcado pelo uso de guitarras elétricas distorcidas, bateria enérgica e letras com atitude
+                        rebelde ou reflexiva.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Hip-Hop / Rap</h3>
+                    <p>Baseado em rimas faladas de forma rápida (flow) sobre batidas eletrônicas e colagens de outras
+                        músicas (beats).</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Eletrônica</h3>
+                    <p>Criada majoritariamente por computadores e sintetizadores, feita sob medida para pistas de dança
+                        e grandes festivais.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Jazz e Blues</h3>
+                    <p>Estilos que nasceram da cultura afro-americana, focados em improvisação, sentimentos profundos e
+                        rica técnica instrumental.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Música Clássica</h3>
+                    <p>Composições eruditas e complexas estruturadas para piano, violino ou grandes orquestras
+                        sinfônicas.</p>
+                </div>
+                <div class="genre-card">
+                    <h3>Reggae</h3>
+                    <p>Ritmo jamaicano relaxado e cadenciado no contratempo, associado a mensagens de paz, amor e
+                        crítica social.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="links-section">
+            <h3>Ouça e Descubra Mais</h3>
+            <a href="https://www.youtube.com" target="_blank" class="btn">YouTube</a>
+            <a href="https://www.spotify.com" target="_blank" class="btn spotify">Spotify</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

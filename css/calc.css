@@ -1,0 +1,93 @@
+/* Reset básico e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #37055f, #750d8f);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(90, 6, 48, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* Área principal (Main) / Grade de Projetos */
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    flex: 1;
+}
+
+/* Cards de Projeto */
+.project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(49, 6, 117, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(83, 4, 99, 0.12);
+}
+
+.project-card h3, .project-card h4 {
+    color: #500663;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.project-card a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #eaeaea;
+    transition: opacity 0.2s;
+}
+
+.project-card img:hover {
+    opacity: 0.9;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4f036d;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
